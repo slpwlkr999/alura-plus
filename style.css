@@ -73,7 +73,7 @@ body {
 .botao_secundario {
     background-color: transparent;
     color: var(--branco-principal);
-    border: var(--branco-principal) solid 1px;
+    border: var(--branco-principal) solid 1px;    
 }
 
 .container__imagem {
@@ -104,11 +104,16 @@ body {
 
 .descricao__texto {
     color: var(--cinza-secundario);
+    margin-bottom: 0.4em;    
 }
 
+.secundario__botao {
+    /* com o uso do block, além de quebrar a linha, permite fazer o uso do width e do height. Ocupará o seu espaço próprio
+    o inline transforma o elemento em linha.  */
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao {
+    padding: 2em;
+}
 
-/*.container__btn {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;    
-}*/

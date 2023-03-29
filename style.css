@@ -1,0 +1,118 @@
+/* 
+
+    responsável por armazenar as variáveis! 
+    --nome-da-variavel: valor-da-variavel;
+    propriedade: var(--nome-da-variavel);
+
+*/  
+/* importei a fonte do googlefonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* reset básico */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* área responsável por armazenar as váriaveis! */
+:root {
+    /* --nomeDaVariavel: valorDaVariavel */
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter', 'sans-serif'; 
+}
+
+body {    
+    /* propriedade: var(--nomeDaVariavel) */
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}   
+
+.principal {
+    background-image: url("./img/Background.png");
+    background-repeat: no-repeat; /* auto explicativo */
+    background-size: contain; /* preenche todo o container do elemento pai */
+    align-items: center; /* no grid (só definiu coluna, não linha), vai alinhar o centro da coluna */
+    text-align: center;
+}
+
+.container {
+    height: 100vh; /* altura da nossa tela do dispositivo. Usa 100% por causa do 100vh*/
+    /* até aqui, a imagem ira se refletir diversas vezes. Inclusive, todo o espaço na direita não se preenche */        
+    display: grid;
+    /* separa os elementos da tela | 100% pode ser dividido em cima de uma porcentagem para fazer a divisão da tela */
+    grid-template-columns: 50% 50%;    
+    /* display: grid; grid-template-columns/rows -> andam lado-a-lado. Dentro de uma <div> auxilia na distribuição. A separação é feita em elementos de bloco */
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 1em; /* tamanho da fonte, medida relativa. */
+    display: block;
+    margin-bottom: 1em;
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    color: var(--branco-principal);
+    border: var(--branco-principal) solid 1px;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+    margin-top: 1em;
+}
+
+.secundario {
+    align-items: center;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+
+/*.container__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;    
+}*/

@@ -85,14 +85,10 @@ body {
     margin-top: 1em;
 }
 
-.secundario {
-    align-items: center;
-}
 
 .secundario__imagem {
     width: 80%;
 }
-
 
 .secundario {
     align-items: center;
